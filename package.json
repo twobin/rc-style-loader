@@ -1,0 +1,59 @@
+{
+  "name": "rc-style-loader",
+  "version": "0.0.1",
+  "description": "remote component style loader",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "rm -rf lib && babel src --out-dir lib",
+    "demo": "UV_THREADPOOL_SIZE=100 webpack-dev-server  --progress --port 4004  --colors --content-base demo --hot --inline --config demo/webpack.config.js",
+    "test": "mocha --check-leaks --compilers js:babel-core/register"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-core": "^6.9.0",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-code": "^0.1.2",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "mocha": "^2.4.5",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "webpack-combine-loaders": "^2.0.0",
+    "webpack-dev-server": "^1.14.1",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0"
+    ]
+  },
+  "keywords": [
+    "remote component",
+    "loader",
+    "style"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twobin/rc-style-loader.git"
+  },
+  "author": "twobin",
+  "bugs": {
+    "url": "https://github.com/twobin/rc-style-loader/issues"
+  },
+  "homepage": "https://github.com/twobin/rc-style-loader",
+  "dependencies": {
+    "loader-utils": "^0.2.15",
+    "webpack": "^1.13.1"
+  },
+  "files": [
+    "src",
+    "lib",
+    "*.md"
+  ],
+  "license": "ISC"
+}
