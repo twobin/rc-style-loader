@@ -20,7 +20,7 @@ module.exports = {
     loaders: [
       {
         test: /\.scss/,
-        loaders: ['style', 'css', 'sass', path.resolve(__dirname, '../') + '?cardId=card-1001'],
+        loaders: ['style', 'css', 'sass', path.resolve(__dirname, '../')],
       },
       {
         test: /\.js$/,
