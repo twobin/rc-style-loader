@@ -13,7 +13,7 @@ module.exports = function(scss) {
     }
 
     if (cardId) {
-      return '.Oneness_' + cardId + ' {' + scss + '}';
+      return '.onenessCard-' + cardId + ' {' + scss + '}';
     }
 
     return scss;
