@@ -7,3 +7,13 @@
     font-weight: bold;
   }
 }
+
+:global {
+  .good {
+    color: red;
+  }
+}
+
+.body {
+  font-size: 12px;
+}
